@@ -2,7 +2,7 @@ import pandas as pd
 import pyperclip
 import sys
 
-# Replace path
+# Path is read from first argument passed in
 file_path = sys.argv[1]
 
 # Read xlsx file and skip the headers

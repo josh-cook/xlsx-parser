@@ -12,4 +12,4 @@ ensure your file path is replaced in the reader
 
 To run in your terminal:
 
-`python3 csvReader.py`
+`python3 csvReader.py path/to/file`
