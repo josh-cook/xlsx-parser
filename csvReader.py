@@ -5,15 +5,19 @@ import sys
 # Path is read from first argument passed in
 file_path = sys.argv[1]
 
-# Read xlsx file and skip the headers
-df = pd.read_excel(file_path, skiprows=1)
+try:
+    # Read xlsx file and skip the headers
+    excel_file = pd.read_excel(file_path, skiprows=1)
+except Exception as e:
+    print(f"Error reading the file: {e}")
+    sys.exit(1)
 
 output_list = []
 
-for index, row in df.iterrows():
+for index, row in excel_file.iterrows():
     # Access the actual column names and values for each row
-    column_b_name = df.columns[1]
-    column_h_name = df.columns[7]
+    column_b_name = excel_file.columns[1]
+    column_h_name = excel_file.columns[7]
     value_b = row[column_b_name]
     value_h = row[column_h_name]
     
