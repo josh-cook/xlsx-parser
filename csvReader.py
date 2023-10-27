@@ -1,8 +1,9 @@
 import pandas as pd
 import pyperclip
+import sys
 
 # Replace path
-file_path = 'path/to/file'
+file_path = sys.argv[1]
 
 # Read xlsx file and skip the headers
 df = pd.read_excel(file_path, skiprows=1)
