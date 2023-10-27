@@ -1,8 +1,8 @@
-# xlsx-to-csv
+# xlsx-parser
 
-A basic python XLSX to CSV reader with copied output
+A basic python XLSX parser with copied output for discounted vehicles
 
-To use the XLSX to CSV parser you will have to install locally the following packages:
+To use the XLSX parser you will have to install locally the following packages:
 
 `pip3 install pandas`
 
