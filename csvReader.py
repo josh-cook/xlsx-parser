@@ -7,7 +7,7 @@ file_path = sys.argv[1]
 
 try:
     # Read xlsx file and skip the headers
-    excel_file = pd.read_excel(file_path, skiprows=1)
+    excel_file = pd.read_excel(file_path, skiprows=0)
 except Exception as e:
     print(f"Error reading the file: {e}")
     sys.exit(1)
