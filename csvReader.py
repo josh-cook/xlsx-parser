@@ -17,12 +17,12 @@ output_list = []
 for index, row in excel_file.iterrows():
     # Access the actual column names and values for each row
     column_b_name = excel_file.columns[1] # vehicleId column
-    column_i_name = excel_file.columns[8] # discountPrice column
+    column_h_name = excel_file.columns[8] # discountPrice column
     value_b = row[column_b_name]
-    value_i = row[column_i_name] * -100 # convert price to pence
+    value_h = row[column_h_name] * -100 # convert price to pence
     
     # output for each row
-    output = f"discountedVehicles.set(\'{value_b}\', {value_i})"
+    output = f"discountedVehicles.set(\'{value_b}\', {value_h})"
     output_list.append(output)
     
 # Combine the outputs and copy to clipboard
