@@ -22,7 +22,7 @@ for index, row in excel_file.iterrows():
     value_j = row[column_j_name] * -100 # convert price to pence
     
     # output for each row
-    output = f"discountedVehicles.set(\'{value_b}\', {value_j})"
+    output = f'discountedVehicles.set(\'{value_b}\', {value_j})'
     output_list.append(output)
     
 # Combine the outputs and copy to clipboard
