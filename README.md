@@ -18,6 +18,12 @@ Run the `install_packages.sh` script to create a virtual environment and install
 bash install_packages.sh
 ```
 
+Alternatively you can run them together (and skip the usage step):
+
+```bash
+bash install_packages.sh && source venv/bin/activate
+```
+
 ## Usage
 After installing the required packages, ensure that you update the file path in the csvReader.py script to point to your specific XLSX file.
 
