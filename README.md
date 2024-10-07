@@ -25,9 +25,7 @@ bash install_packages.sh && source venv/bin/activate
 ```
 
 ## Usage
-After installing the required packages, ensure that you update the file path in the csvReader.py script to point to your specific XLSX file.
-
-Activate your virtual environment: 
+After installing the required packages you should activate your virtual environment: 
 
 ```bash
 source venv/bin/activate
@@ -36,7 +34,7 @@ source venv/bin/activate
 To run the parser, use the following command in your terminal:
 
 ```bash
-python3 csvReader.py path/to/file
+python3 xlsxParser.py path/to/file.xlsx
 ```
 
 Deactivate your virtual environment:
