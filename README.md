@@ -1,15 +1,45 @@
-# xlsx-parser
+# XLSX Parser for Discounted Vehicles
 
-A basic python XLSX parser with copied output for discounted vehicles
+This repository contains a basic Python XLSX parser designed to process data for discounted vehicles. The output can be copied to your clipboard for easy access.
 
-To use the XLSX parser you will have to install locally the following packages:
 
-`pip3 install pandas`
+## Installation
 
-`pip3 install pyperclip`
+### Clone Repo
+```bash
+git clone git@github.com:josh-cook/xlsx-parser.git
+cd xlsx-parser
+```
 
-ensure your file path is replaced in the reader
+### Install Required Packages: 
 
-To run in your terminal:
+Run the `install_packages.sh` script to create a virtual environment and install the required packages:
+```bash
+bash install_packages.sh
+```
 
-`python3 csvReader.py path/to/file`
+## Usage
+After installing the required packages, ensure that you update the file path in the csvReader.py script to point to your specific XLSX file.
+
+Activate your virtual environment: 
+
+```bash
+source venv/bin/activate
+```
+
+To run the parser, use the following command in your terminal:
+
+```bash
+python3 csvReader.py path/to/file
+```
+
+Deactivate your virtual environment:
+
+```bash
+deactivate
+```
+
+<br>
+
+### Notes
+Ensure that you have Python 3 and pip installed on your system.

@@ -1,12 +1,22 @@
 #!/bin/bash
 
+if [ ! -d "venv" ]; then
+  echo "Creating Virtual Environment"
+  python3 -m venv venv
+fi
+
+source venv/bin/activate
+
+# Install required packages within the virtual environment
 echo "Installing pandas..."
-pip3 install --user pandas --break-system-packages
+pip install pandas
 
 echo "Installing pyperclip..."
-pip3 install --user pyperclip --break-system-packages
+pip install pyperclip
 
 echo "Installing openpyxl..."
-pip3 install --user openpyxl --break-system-packages
+pip install openpyxl
 
-echo "All packages have been installed!"
+echo "All packages have been installed in the virtual environment!"
+echo "To activate the virtual environment in the future, run: source venv/bin/activate"
+echo "To deactivate, simply run: deactivate"
