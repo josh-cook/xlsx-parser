@@ -18,5 +18,5 @@ echo "Installing openpyxl..."
 pip install openpyxl
 
 echo "All packages have been installed in the virtual environment!"
-echo "To activate the virtual environment in the future, run: source venv/bin/activate"
-echo "To deactivate, simply run: deactivate"
+echo "To activate the virtual environment, run: source venv/bin/activate"
+echo "To deactivate, run: deactivate"
