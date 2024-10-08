@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Create a venv if one does not exist
 if [ ! -d "venv" ]; then
   echo "Creating Virtual Environment"
   python3 -m venv venv
