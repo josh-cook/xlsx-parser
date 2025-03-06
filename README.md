@@ -7,8 +7,8 @@ This repository contains a basic Python XLSX parser designed to process data for
 
 ### Clone Repo
 ```bash
-git clone git@github.com:josh-cook/xlsx-parser.git
-cd xlsx-parser
+git clone git@github.com:cinch-labs/discounted-vehicles-parser.git
+cd discounted-vehicles-parser
 ```
 
 ### Install Required Packages: 
@@ -34,7 +34,7 @@ source venv/bin/activate
 To run the parser, use the following command in your terminal:
 
 ```bash
-python3 xlsxParser.py path/to/file.xlsx
+python3 discounted_vehicles_parser.py path/to/file.xlsx
 ```
 
 Deactivate your virtual environment:
