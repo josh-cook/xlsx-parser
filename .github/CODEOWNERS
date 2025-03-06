@@ -1,8 +1,0 @@
-#Add owning team
-* @cinch-labs
-
-# exclusions
-
-#Allows renovate to create and merge pull requests without requiring approval from orders
-package.json 
-package-lock.json
